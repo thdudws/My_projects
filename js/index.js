@@ -49,7 +49,87 @@ $(document).ready(function() {
             onComplete: moveY,
             onCompleteParams: [target, direction * -1]
         });
-    } 
+    }
+
+    // gsap.registerPlugin(ScrollTrigger);
+
+    // gsap.utils.toArray('.flex_container').forEach(section => {
+    //     gsap.set(section, { scale: 1, opacity: 1 });
+    //     gsap.from(section, {
+    //         scrollTrigger: {
+    //             trigger: section,
+    //             start: "top 80%",
+    //             end: "top top",
+    //             scrub: 1
+    //         },
+    //         scale: 0.5,
+    //         opacity: 1,
+    //         duration: 1,
+    //         ease: "power3.out"
+    //     });
+    // });
+
+    let index = 0,
+        interval = 1000;
+
+    const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+    const animate = star => {
+        star.style.setProperty("--star-left", rand(-10, 100) + "%");
+        star.style.setProperty("--star-top", rand(-40, 80) + "%");
+
+        star.style.animation = "none"; 
+        star.offsetHeight; 
+        star.style.animation = ""; 
+    };
+
+    for (const star of document.getElementsByClassName("magic-star")) {
+        setTimeout(() => {
+            animate(star);
+            setInterval(() => animate(star), 1000); 
+        }, index++ * (interval / 3));
+    }
+
+    $(".nav__list").creepingAnchor({
+        offsetLeft: 0,
+        position: "bottom",
+        speed: 400,
+        anchors: true,
+        onViewChange: function(section) {
+            console.log(section);
+        }
+    });
+
+    // $(document).ready(function() {
+    //     $(".nav__list a").on("click", function(e) {
+    //         e.preventDefault();
+    
+    //         const targetSectionId = $(this).attr("href");
+    
+    //         const targetSection = $(targetSectionId);
+    //         const offsetTop = targetSection.offset().top;
+    
+    //         const offset = $(this).data("offset") || 0;
+    
+    //         const navHeight = $(".nav").outerHeight();
+    
+    //         const scrollTo = offsetTop - navHeight + offset;
+    
+    //         const currentScroll = $(window).scrollTop();
+    //         const direction = currentScroll < scrollTo ? 'down' : 'up';
+    
+    //         if (direction === 'up') {
+    //             $("html, body").animate({
+    //                 scrollTop: scrollTo
+    //             }, 350);
+    //         }
+    //         else if (direction === 'down') {
+    //             $("html, body").animate({
+    //                 scrollTop: scrollTo - 180
+    //             }, 300);
+    //         }
+    //     });
+    // });    
     
 });  
 
