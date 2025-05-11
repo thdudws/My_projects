@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   font-family: 'S-CoreDream-3Light';
-  font-display: swap;
+  font-size: 1.1rem;
 }
 
 ul,
@@ -425,7 +425,7 @@ h1.random {
   transform: translate(-50%, -50%);
  width: 400px;
   height: 500px;
-  background: url(img/rabbit.png) no-repeat 50% 50%;
+  background: url(https://github.com/thdudws/pubPort/blob/main/img/rabbit.png?raw=true) no-repeat 50% 50%;
   background-size: 130%;
   animation: animatedBackground2 3s cubic-bezier(0.19, 1, 0.22, 1);
   animation-delay: 7s;
@@ -556,7 +556,7 @@ h1.random {
   margin: 0;
   padding: 0;
   color: #a79d99;
-  font-size: 200px;
+  font-size: 12rem;
   font-family: "Cinzel";
 }
 
@@ -630,7 +630,7 @@ main {
   display: block;
   color: rgb(85, 85, 85);
   font-family: "Krona One";
-  font-size: 5.5rem;
+  font-size: 8rem;
   font-weight: 300;
   padding: 2vh 0;
   opacity: 1;
