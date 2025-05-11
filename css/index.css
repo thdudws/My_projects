@@ -13,7 +13,6 @@
   margin: 0;
   padding: 0;
   font-family: 'S-CoreDream-3Light';
-  font-size: 1.1rem;
 }
 
 ul,
@@ -546,13 +545,13 @@ h1.random {
   background: #ffffff;
   z-index: 2;
   overflow: hidden;
-  padding-top: 100px;
+  padding-top: 5%;
 }
 
 .loader marquee {
   opacity: 0.2;
   text-transform: uppercase;
-  line-height: 190px;
+  line-height: 12rem;
   margin: 0;
   padding: 0;
   color: #a79d99;
@@ -569,15 +568,14 @@ h1.random {
 }
 
 .loader .intro h1 {
-  font-size: 140px !important;
+  font-size: 8rem !important;
   font-weight: 200;
   color: 	#824e8f;
-  font-family: "Cinzel";
 }
 
 .intro-title .letter {
   display: inline-block;
-  line-height: 1em;
+  line-height: 8rem;
 }
 
 
@@ -630,7 +628,7 @@ main {
   display: block;
   color: rgb(85, 85, 85);
   font-family: "Krona One";
-  font-size: 8rem;
+  font-size: 6rem;
   font-weight: 300;
   padding: 2vh 0;
   opacity: 1;
@@ -648,6 +646,7 @@ main {
 .menu__item-innertext {
   display: inline-block;
   transition: letter-spacing 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  font-size: 6rem;
 }
 
 .menu:hover .menu__item-text {
