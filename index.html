@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PORTFOLIO</title>
+    <title>PoRTFoLIo</title>
 
-    <link rel="stylesheet" href="css/index.css?v=1.1" />
-    <link rel="stylesheet" href="css/second.css?v=1.1" />
-    <link rel="stylesheet" href="css/swiper.css?v=1.1" />
-    <link rel="stylesheet" href="css/fourth.css?v=1.1" />
-    
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/second.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/fourth.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
 
@@ -19,6 +19,16 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css?family=Cinzel&display=swap"
+        rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <!-- AnimeJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
     <script src="js/creepingAnchor.js"></script>
 
@@ -32,7 +42,9 @@
 
     <script src="js/mainText.js"></script>
     
+    <script src="js/textScroll.js"></script>
 
+    <script src="js/ImageHover.js"></script>
 
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -71,15 +83,8 @@
           <div class="blur"></div>
           <div class="blur"></div>
 
-          <!-- <div class="random_box">
-
-            <h1 class="random">
-
-            </h1>
-          </div>   -->
-
-          <h1 class="main_h1">
-            안녕하세요. <br> 신입 개발자
+          <!-- <h1 class="main_h1">
+            안녕하세요. <br> 신입 퍼블리셔
             <span class="magic">
               <span class="magic-star">
                 <svg viewBox="0 0 512 512">
@@ -108,7 +113,96 @@
 
           <div class="mouse">
             <img src="img/mouse.png" alt="mouse">
-          </div>
+          </div> -->
+
+          <div class="loader">
+            <marquee direction="right" scrollamount="30"
+                >HTML, CSS, JavaScript, React, Responsive Web Design, Cross-Browser Compatibility, 
+                Web Accessibility!
+                </marquee
+            >
+            <marquee direction="left" scrollamount="40"
+                >HTML, CSS, JavaScript, React, Responsive Web Design, Cross-Browser Compatibility?.</marquee
+            >
+            <marquee direction="right" scrollamount="35"
+                >HTML, CSS, JavaScript, React, Responsive Web Design, Cross-Browser Compatibility, 
+                Web Accessibility*</marquee
+            >
+            <marquee direction="" scrollamount="40"
+                >HTML, CSS, JavaScript, React, Responsive Web Design, Cross-Browser Compatibility, 
+                Web Accessibility@</marquee
+            >
+            <div class="intro">
+                <h1 class="intro-title">My Viewport</h1>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- <div class="logo">selected</div> -->
+            <div class="container-left">
+                <!-- <div class="lang">en | fr</div> -->
+
+                <div class="left-img-cap">
+                    <span>Project Highlights</span><br />
+                    Introducing the Project
+                </div>
+                <div class="container-left-img"></div>
+                <!-- <div class="left-img-btn"> View Project</div> -->
+                <div class="left-bottom-text">
+                    /Project Preview
+                </div>
+               
+            </div>
+
+            <div class="container-right">
+
+              <main>
+
+                <nav class="menu">
+                  <a class="menu__item">
+                    <div class="menu__item-image_wrapper">
+                      <div class="menu__item-image_inner">
+                        <img class="menu__item-image" src="/img/giodano_pr.png" alt="giodano" />
+                      </div>
+                    </div>
+                    <span class="menu__item-text"><span class="menu__item-innertext">React</span></span>
+                  </a>
+                  <a class="menu__item">
+                    <div class="menu__item-image_wrapper">
+                      <div class="menu__item-image_inner">
+                        <img class="menu__item-image" src="/img/ridibooks_pr.png" alt="ridibooks" />
+                      </div>
+                    </div>
+                    <span class="menu__item-text"><span class="menu__item-innertext">Open Api</span></span>
+                  </a>
+                  <a class="menu__item">
+                    <div class="menu__item-image_wrapper">
+                      <div class="menu__item-image_inner">
+                        <img class="menu__item-image" src="/img/Melbourne_pr.png" alt="Melbourne" />
+                      </div>
+                    </div>
+                    <span class="menu__item-text"><span class="menu__item-innertext">Team Project</span></span>
+                  </a>
+                  <a class="menu__item">
+                    <div class="menu__item-image_wrapper">
+                      <div class="menu__item-image_inner">
+                        <img class="menu__item-image" src="/img/marie_pr.png" alt="marie" />
+                      </div>
+                    </div>
+                    <span class="menu__item-text"><span class="menu__item-innertext">Responsive</span></span>
+                  </a>
+                </nav>
+              </main>
+              
+              <div class="support">
+                <a href="https://twitter.com/DevLoop01" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://dribbble.com/devloop01" target="_blank"><i class="fab fa-dribbble"></i></a>
+              </div>
+             
+            </div>
+            
+        </div>
+
 
         </div>
       </section>
